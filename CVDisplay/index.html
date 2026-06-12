@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rudimentary CV (PyScript)</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+    <h1>CV Manager</h1>
+    <div class="form-group">
+        <label>Category:</label>
+        <select id="cat">
+            <option>Personal</option><option>Work</option><option>Education</option>
+            <option>Skills</option><option>Languages</option><option>Certifications</option>
+            <option>Projects</option><option>Awards</option><option>Volunteering</option>
+            <option>Publications</option><option>References</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Title:</label><input id="title" placeholder="e.g., Software Engineer">
+    </div>
+    <div class="form-group">
+        <label>Details:</label><textarea id="details" rows="2" placeholder="extra info"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Visible:</label>
+        <select id="visible"><option value="true">Yes</option><option value="false">No</option></select>
+    </div>
+    <button id="addBtn">Add Entry</button>
+    <button id="pdfBtn">📄 Download PDF</button>
+
+    <h3>All Entries</h3>
+    <div id="entriesList" class="entries"></div>
+
+    <h3>Resume (HTML) - only visible</h3>
+    <div id="resumeContainer" class="resume"></div>
+
+    <script type="py" src="cv.py"></script>
+</body>
+
+<style>
+    body { 
+        font-family: sans-serif; 
+        max-width: 1000px; 
+        margin: auto; 
+        padding: 20px; 
+    }
+
+    .form-group { 
+        margin-bottom: 10px; 
+    }
+
+    label { 
+        display: inline-block; 
+        width: 80px; 
+    }
+    input, select, textarea { 
+        width: 250px; 
+        padding: 5px; 
+    }
+    button { 
+        margin: 5px; 
+        padding: 5px 10px; 
+    }
+    .entries, .resume { 
+        border: 1px solid #ccc; 
+        padding: 10px; 
+        margin: 10px 0; 
+        max-height: 300px; 
+        overflow: auto; 
+    }
+    .entry { 
+        border-left: 3px solid blue; 
+        margin: 5px 0; 
+        padding: 5px; 
+        background: #f9f9f9; 
+    }
+    .hidden { 
+        opacity: 0.5; 
+        text-decoration: line-through; 
+    }
+    .resume-section { 
+        margin-bottom: 15px; 
+        }
+
+</style>
+</html>

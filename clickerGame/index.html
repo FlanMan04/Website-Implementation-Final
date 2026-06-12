@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <title> Splat-Clicker Game </title>
+
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="body">
+   
+    <h1 style="color: white; text-align: center; width: 100%;">Click on Lancer to let him hear his favorite sound!</h1>
+
+    <div>
+
+    <p>Splats: <span id="clickCount">0</span></p>
+    <p>Total splats: <span id="totalCount">0</span></p> 
+
+    <div class="button-container">
+        <button id="clicking" class="splat-button">
+            <img src="img/Lancer_face_joining.png" alt="Splat">
+        </button>
+    </div>
+
+    <div class="row">
+
+        <div class="col-3">
+            <div style="height: 218px; width: 270px;">
+                <img src="img/Seam_face.gif" alt="Shopkeep">
+            </div>
+        </div>
+
+        <div class="store-list">
+            <div class="store-item">
+                <button id="buyingDuo">Buy</button>
+                <span class="store-description">2x Splat Bonus - Costs 25 Splats</span>
+            </div>
+
+            <div class="store-item">
+                <button id="buyingQuad">Buy</button>
+                <span class="store-description">4x Splat Bonus - Costs 100 Splats</span>
+            </div>
+
+            <div class="store-item">
+                <button id="buyingOcto">Buy</button>
+                <span class="store-description">8x Splat Bonus - Costs 100 Splats</span>
+            </div>
+            
+            <div class="store-item">
+                <button id="buyingSexdecu">Buy</button>
+                <span class="store-description">16x Splat Bonus - Costs 100 Splats</span>
+            </div>
+
+            <div class="store-item">
+                <button id="buyingDuotringtuple">Buy</button>
+                <span class="store-description">32x Splat Bonus - Costs 100 Splats</span>
+            </div>
+
+            <div class="store-item">
+                <button id="buyingQuattorsexagintuple">Buy</button>
+                <span class="store-description">64x Splat Bonus - Costs 100 Splats</span>
+            </div>
+
+            <div class="store-item">
+                <button id="buyingCentuple">Buy</button>
+                <span class="store-description">100x Splat Bonus - Costs 100 Splats</span>
+            </div>
+
+        </div>
+    </div>
+
+    <audio id="splatSound" src="sfx/deltarune_splat.m4a" preload="auto"></audio>
+    <audio id="bgMusic" src="sfx/seam_Shop.mp3" autoplay loop muted preload="auto"></audio>
+
+    <div>
+      <div id="output"></div>
+    </div>
+
+  </body>
+
+    <style>
+
+        @font-face {
+            font-family: 'Determination';
+            src: url("font/determination.ttf") format('truetype');
+        }
+
+        * {
+            font-family: 'Determination', monospace;
+            font-smooth: never;
+            -webkit-font-smoothing: none;
+        }
+
+        .body {
+        background-color: black;
+        }
+
+        p {
+        color: white;
+        font-size: 18px;
+        }
+
+        button[id^="buying"] {
+        color: yellow;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 5px;
+        }
+
+        .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        margin: 0;
+        }
+
+        .splat-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        }
+
+        .splat-button img {
+        width: 200px;
+        height: auto;
+        display: block;
+        transition: transform 0.1s ease;
+        }
+
+        .splat-button:active img {
+        transform: scale(0.95);
+        }
+
+        .store-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+        }
+
+        .store-item button {
+        width: 100px;
+        padding: 5px 10px;
+        }
+
+        .store-description {
+        font-size: 14px;
+        color: white;
+        }
+
+        .store-list {
+        display: grid;
+        grid-auto-flow: column;  /* items fill columns vertically first */
+        grid-template-rows: repeat(4, auto);  /* 4 items per column */
+        }
+
+        .row {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        align-items: flex-start;
+        margin: 20px 0;
+        }
+
+        .col-3 {
+        flex-shrink: 0;
+        }
+    </style>
+
+    <script type="py" config="./conf.json" src="./clickGame.py"></script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <title> Rock-Paper-Scissors </title>
+
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+  </head>
+
+  <body style="background-color:pink; display: flex; flex-direction: column; justify-content: space; text-align: center;">
+    <h1 style="font-family: sans-serif;">Welcome to my Rock-Paper-Scissors WebApp</h1>
+    <p style="font-family: 'Times New Roman', Times, serif; font-size: larger; justify-content: space-evenly;" > Pick Your Weapon </p>
+
+    <div style="gap: 30px;">
+      <button id="Rock" style="align-self: flex-start; width: 66.38px; height: 21px"> Rock </button>
+      <button id="Paper" style="align-self: flex-start; width: 66.38px; height: 21px"> Paper </button>
+      <button id="Scissors" style="align-self: flex-start; width: 66.38px; height: 21px"> Scissors </button>
+    </div>
+    <div class="container">
+      <div id="output"></div>
+    </div>
+
+    <style>
+      .container {
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: nowrap ;
+        justify-content: center; 
+        align-items: center ; 
+        align-content: center; 
+        gap: 30px;
+      }
+
+    </style>
+
+    <script type="py" config="./conf.json" src="./main.py"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <title> Joestar Family tree </title>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Prolog App</title>
+        <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/core.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/lists.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/random.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/format.js"></script>
+    </head>        
+    
+    <body style="background-color: plum; justify-content: center; width: 100%; height: 100%; text-align: center;">
+
+        <h1>Welcome to the Joestar Family Interactive App</h1>
+        
+        <div style="font-size: small;"><h2>Pick 2 characters to familiarize yourself with the cast! [Some characters have no relation between them]</h2></div>
+        <div id="characters" class="container"></div>
+        <div style="display: flex; gap: 30px; flex-direction: row; align-items: center;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img id="pick1img" src="" style="width:100px; height:100px; object-fit:cover; border-radius:10px; display:none;">
+                <h2 id="pick1">First Member</h2>
+            </div>
+            <h2>has relation with</h2>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img id="pick2img" src="" style="width:100px; height:100px; object-fit:cover; border-radius:10px; display:none;">
+                <h2 id="pick2">Second Member</h2>
+            </div>
+            <p>?</p>
+        </div>
+
+        <h2 id="result"></h2>        
+        <script src="main.js" defer></script>    
+
+    </body>
+
+<style>
+    .container {
+        display: grid;
+
+        grid-template-columns: repeat(11, 120px);
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .character {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+
+        padding: 10px;
+        cursor: hand;
+    }
+
+    .character img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .character:hover {
+        background-color: lightgray;
+        transform: scale(1.05);
+    }
+</style>
+
+
+</html>
