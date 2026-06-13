@@ -19,7 +19,7 @@ Written in PyScript this is a simple Rock, Paper, Scissors program (was my first
 Probably the simplest in concept yet hardest to execute was my ClojureScript program that represents a calculator that only does factorials. Simply type or alternatively click the buttons on screen to see the factorial of the inputted number on screen (with a limit of up to 170, since anything larger does not compute). The program has a clear button and a delete button for freeing up the input slot.
 - Clicker Game  
 Written in PyScript, this is a simple clicker game fully inspired by Deltarune. Probably my best looking program, it features sprites, sounds, and music from Deltarune, a game I love. The objective is to click on the image of "Handsome Lancer" and you'll gain splats, of which you can buy splat multiplier bonuses with next to the shopkeeper, Seam. The audio of the program activates upon the first click of "Handsome Lancer". There is no end goal to the program, only to gain splats and spend splats, to gain even more splats.
-- Tic-Tac-Toe
+- Tic-Tac-Toe  
 Written in PyScript, the program alternates between Player X and O to fill a 3x3 grid, with the option to reset at any time. Players must click the grid they want to add their shape to. The program recognizes when their is a tie and a victor, it will then ask you to reset the board.
 
 # Acknowlegments
