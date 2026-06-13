@@ -54,5 +54,5 @@ Trademark: "Pokémon," "Pokémon character names," "Nintendo Switch," are tradem
 
 Official Website: pokemon.com.
 
-The concepts of these programs were solely mine, elaboration of any codes and feedback was provided by [Kaizanor](github.com/Kaizanor) and []
+The concepts of these programs were solely mine, elaboration of any codes and feedback was provided by [Kaizanor](github.com/Kaizanor) and other collaborator that didn't want to be credited.
 For transparency, CSS styling was done with the help of AI and https://yoksel.github.io/flex-cheatsheet/
