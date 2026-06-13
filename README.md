@@ -8,7 +8,7 @@ This entire project is meant to run on a local host running on the project folde
 Locate yourself within the project folder and open a terminal and run the following command: On python I suggest using 'python -m http.server 8000' or alternatively if using JavaScript 'npx serve --port 8000'.
 
 ## Website Rundowns
-- Turn-Based RPG
+- Turn-Based RPG  
 Simple Role-Playing Game simulator written in TypeScript that has you select who in a party of 4 get to attack against a goblin. Everytime someone attacks, the goblin will at random, choose one character to attack and the party may have members die by having their health reduced to zero. If all members die, you lose. The objective is to reduce the opponent health to zero, which is not difficult at all.  
 - JoJo Family Tree
 This is a family relations program written in Tau Prolog inspired by JoJo's Bizarre Adventure, known for having an extensive family tree. I was able to display parent, uncle, children, sibling relationships and some of their iterations. But not be able to properly display spouse to spouse relationships due to how complicated the family tree may be at times. Simply click on Character1 then on Character2 to find out what their relationship is. (ex. Jotaro and Jolyne, Dio and Shizuka, Jonathan and Joseph)
