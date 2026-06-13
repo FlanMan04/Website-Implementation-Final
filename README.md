@@ -8,12 +8,17 @@ This entire project is meant to run on a local host running on the project folde
 Locate yourself within the project folder and open a terminal and run the following command: On python I suggest using 'python -m http.server 8000' or alternatively if using JavaScript 'npx serve --port 8000'.
 
 ## Website Rundowns
-- Turn-Based RPG  
-- JoJo Family Tree  
-- Rock Paper Scissors  
+- Turn-Based RPG
+Simple Role-Playing Game simulator written in TypeScript that has you select who in a party of 4 get to attack against a goblin. Everytime someone attacks, the goblin will at random, choose one character to attack and the party may have members die by having their health reduced to zero. If all members die, you lose. The objective is to reduce the opponent health to zero, which is not difficult at all.  
+- JoJo Family Tree
+This is a family relations program written in Tau Prolog inspired by JoJo's Bizarre Adventure, known for having an extensive family tree. I was able to display parent, uncle, children, sibling relationships and some of their iterations. But not be able to properly display spouse to spouse relationships due to how complicated the family tree may be at times. Simply click on Character1 then on Character2 to find out what their relationship is. (ex. Jotaro and Jolyne, Dio and Shizuka, Jonathan and Joseph)
+- Rock Paper Scissors
+Written in PyScript this is a simple Rock, Paper, Scissors program (was my first program in the project). You are met with 3 buttons labeled after the actions in the children's game. Once your selection is made, the program will automatically choose what is meant to counter your choice, with text that will indicate whether you won, lost, or tied. The Rock image is from JoJo's Bizarre Adventure, as well as the paper's option, and the Scissors option has a picture of Mega-Scizor from the pokemon franchise attached to it.
 - CV Display  
 - Factorial Calculator  
-- Clicker Game  
+Probably the simplest in concept yet hardest to execute was my ClojureScript program that represents a calculator that only does factorials. Simply type or alternatively click the buttons on screen to see the factorial of the inputted number on screen (with a limit of up to 170, since anything larger does not compute). The program has a clear button and a delete button for freeing up the input slot.
+- Clicker Game
+Written in PyScript, this is a simple clicker game fully inspired by Deltarune. Probably my best looking program, it features sprites, sounds, and music from Deltarune, a game I love. The objective is to click on the image of "Handsome Lancer" and you'll gain splats, of which you can buy splat multiplier bonuses with next to the shopkeeper, Seam. The audio of the program activates upon the first click of "Handsome Lancer". There is no end goal to the program, only to gain splats and spend splats, to gain even more splats.
 - Tic-Tac-Toe  
 
 # Acknowlegments
