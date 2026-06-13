@@ -8,7 +8,13 @@ This entire project is meant to run on a local host running on the project folde
 Locate yourself within the project folder and open a terminal and run the following command: On python I suggest using 'python -m http.server 8000' or alternatively if using JavaScript 'npx serve --port 8000'.
 
 ## Website Rundowns
-
+Turn-Based RPG
+JoJo Family Tree
+Rock Paper Scissors
+CV Display
+Factorial Calculator
+Clicker Game
+Tic-Tac-Toe
 
 # Acknowlegments
 
