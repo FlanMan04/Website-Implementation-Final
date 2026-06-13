@@ -25,7 +25,7 @@ Written in PyScript, the program alternates between Player X and O to fill a 3x3
 
 # Acknowlegments
 
-JoJo's Bizarre Adventure
+### JoJo's Bizarre Adventure
 Created by: Hirohiko Araki.
 
 Manga Publisher: Serialized by Shueisha (in Weekly Shōnen Jump) and published in North America by VIZ Media.
@@ -37,7 +37,7 @@ Anime Production Committee: The anime's copyright is held by the "JOJO's Animati
 Official Website: jojo-portal.com.
 
 
-Deltarune
+### Deltarune
 Created by: Toby Fox.
 
 Copyright & Trademark: © Toby Fox 2018-2021. DELTARUNE® is a trademark of Royal Sciences, LLC in the U.S..
@@ -45,7 +45,7 @@ Copyright & Trademark: © Toby Fox 2018-2021. DELTARUNE® is a trademark of Roya
 Official Website: deltarune.com (Japanese site also available at deltarune.jp).
 
 
-Pokémon
+### Pokémon
 Original Copyright: © Nintendo / Creatures Inc. / GAME FREAK inc. from 1995 to present.
 
 Management Company: The Pokémon Company (and internationally, The Pokémon Company International) manages the brand.
