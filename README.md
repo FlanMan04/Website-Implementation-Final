@@ -1,3 +1,15 @@
+# Introduction
+This is a repository containing all the work made for my Programming Languages Class from the "Recinto de Mayaguez". Here you will find 7 varying programs made with the express purpose of practicing and acquainting myself with 4 distinct programming paradigms and HTML/CSS.
+
+Each paradigm brought its own sets of challanges, some mostly from setting them up and others from working with the syntax, oddly enough the hardest and most annoying hurdle was CSS styling.
+
+# Instructions
+This entire project is meant to run on a local host running on the project folder.
+Locate yourself within the project folder and open a terminal and run the following command: On python I suggest using 'python -m http.server 8000' or alternatively if using JavaScript 'npx serve --port 8000'.
+
+## Website Rundowns
+
+
 # Acknowlegments
 
 JoJo's Bizarre Adventure
